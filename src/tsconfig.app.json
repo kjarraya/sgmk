@@ -13,5 +13,13 @@
   "exclude": [
     "test.ts",
     "**/*.spec.ts"
-  ]
+  ],
+    "paths": {
+      "*": [
+        "./*",
+        "app/*",
+        "assets/*",
+        "../node_modules/*"
+      ]
+    }
 }
