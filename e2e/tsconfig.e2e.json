@@ -8,6 +8,14 @@
       "jasmine",
       "jasminewd2",
       "node"
-    ]
+    ],
+    "paths": {
+      "*": [
+        "./*",
+        "app/*",
+        "assets/*",
+        "../node_modules/*"
+      ]
+    }
   }
 }
