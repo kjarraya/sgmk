@@ -15,5 +15,13 @@
   "include": [
     "**/*.spec.ts",
     "**/*.d.ts"
-  ] 
+  ] ,
+    "paths": {
+      "*": [
+        "./*",
+        "app/*",
+        "assets/*",
+        "../node_modules/*"
+      ]
+    }
 }
