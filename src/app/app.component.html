@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="container-fluid">
+        <app-menu></app-menu>
+    </div>    
+    <div class="container-fluid">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="container-fluid" >
+      <app-footer></app-footer>
+  </div>
+</div>
+<div id="back-to-top" class="back-to-top" style="display: table;"><a href="#back-to-top"><i class="ion-ios-arrow-up"></i></a></div>
+<script>
+		// back to top			
+		var offset = 400;
+		var duration = 1000;
+		$('.back-to-top').fadeOut(duration);
+		$(window).on('scroll', function() {
+			($(this).scrollTop() > offset)?$('.back-to-top').fadeIn(duration):$('.back-to-top').fadeOut(duration);
+		});
+		
+		$('.back-to-top').on('click', function(event) {
+			event.preventDefault();
+			$('html, body').animate({scrollTop: 0}, duration);
+			return false;
+		})
+</script>
